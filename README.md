@@ -9,4 +9,5 @@ Opções que envolvem as tarefas:
 - Marcar como importante
 
 Campo de busca para pesquisar as tarefas
+
 Filtro => todas as tarefas | Feitas | A fazer | Importante
