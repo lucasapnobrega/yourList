@@ -1,0 +1,35 @@
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid $gray;
+    padding: 1.2rem;
+    transition: all .4s;
+
+    .list-btn {
+        display: flex;
+        gap: 0.4rem;
+    }
+
+    h4 {
+        flex: 1;
+    }
+
+    &.done {
+        background-color: #0e3e6e;
+
+        h4 {
+            color: #fff;
+            text-decoration: line-through;
+        }
+
+        .btn:hover {
+            background-color: #6b6363; 
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

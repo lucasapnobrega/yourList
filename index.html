@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your List</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Your List</h1>
+        </header>
+
+        <form action="" id="add-form" autocomplete="off">
+            <label for="add-task">Tarefa a ser adicionada:</label>
+            <div class="form-control">
+                <input type="text" name="add-task" id="add-input" placeholder="Tarefa">
+                <button type="submit" class="btn"><i class="fa-thin fa-plus"></i></button>
+            </div>
+            <p class="error-message"></p>
+        </form>
+
+        <form action="" id="edit-form" class="hide">
+            <label for="edit-task">Edição da tarefa:</label>
+            <div class="form-control">
+                <input type="text" name="edit-task" id="edit-input" placeholder="Tarefa">
+                <button type="submit" class="btn"><i class="fa-solid fa-pen"></i></button>
+            </div>
+
+            <button id="cancel-edit-btn" class="btn">Cancelar</button>
+        </form>
+
+        <div id="toolbar">
+            <div id="search">
+                <label for="search">Pesquisar</label>
+                <form action="" id="search-form" autocomplete="off">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="search" id="search-input" placeholder="Buscar">
+                </form>
+            </div>
+
+            <div id="filter">
+                <label for="filter">Filtrar:</label>
+                <select name="filter" id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                    <option value="important">Importante</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="container-list">
+            <div class="list">
+                <h4>Tarefa Base</h4>
+                <div class="list-btn">
+                    <button class="done-btn btn" title="Feito"><i class="fa-solid fa-check"></i></button>
+                    <button class="edit-btn btn" title="Editar"><i class="fa-solid fa-file-pen"></i></button>
+                    <button class="delete-btn btn" title="Deletar"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="copy-btn btn" title="Copiar"><i class="fa-solid fa-copy"></i></button>
+                    <button class="important-btn btn" title="Importante"><i class="fa-solid fa-star"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

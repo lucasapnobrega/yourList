@@ -1,0 +1,224 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: #555454;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #383737, #302a2a);
+}
+
+.btn {
+  background-color: #eceaea;
+  color: #153b74;
+  border: 2px solid #153b74;
+  outline: none;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn i {
+  color: #153b74;
+  font-weight: bold;
+  pointer-events: none;
+}
+.btn:hover {
+  background-color: #153b74;
+  color: #fff;
+}
+.btn:hover > i {
+  color: #fff;
+}
+
+input, select {
+  padding: 0.4rem 0.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 5rem auto;
+  background-color: #dfdede;
+  padding: 1.6rem;
+  border-radius: 12px;
+}
+@media (max-width: 515px) {
+  .container {
+    margin: 5rem 1rem;
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 0.95rem;
+}
+
+.error-border {
+  border: 1px solid red;
+}
+
+.bg-green {
+  background-color: green;
+}
+.bg-green i {
+  color: #fff;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.list.important {
+  padding-left: 0;
+}
+
+.important {
+  background-color: #d6d628;
+}
+.important h4 {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.important .star {
+  font-size: 1rem;
+  margin: 0 0.4rem 0 0.6rem;
+  color: rgb(133, 133, 48);
+}
+.important .important-btn {
+  background-color: #353333;
+  border-color: #353333;
+}
+.important .important-btn i {
+  color: #fff;
+}
+
+.opacity-half {
+  opacity: 0.5;
+}
+
+.header {
+  text-align: center;
+  padding: 0 1.4rem 1.4rem;
+  border-bottom: 2px solid #ccc;
+}
+
+#add-form, #edit-form {
+  padding: 1.2rem;
+  border-bottom: 1px solid #ccc;
+}
+#add-form label, #edit-form label {
+  font-weight: bold;
+}
+#add-form .form-control, #edit-form .form-control {
+  display: flex;
+  gap: 0.4rem;
+}
+#add-form #add-input, #add-form #edit-input, #edit-form #add-input, #edit-form #edit-input {
+  width: 100%;
+}
+#add-form #cancel-edit-btn, #edit-form #cancel-edit-btn {
+  margin-top: 0.8rem;
+}
+
+#toolbar {
+  display: flex;
+  padding: 1.2rem;
+  border-bottom: 2px solid #ccc;
+}
+#toolbar.hide {
+  display: none;
+}
+#toolbar #search {
+  border-right: 1px solid #ccc;
+  width: 70%;
+  margin-right: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+}
+@media (max-width: 515px) {
+  #toolbar #search {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 1rem;
+  }
+}
+#toolbar #search #search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+#toolbar #search #search-form input {
+  width: 100%;
+  padding-left: 1.8rem;
+}
+#toolbar #search #search-form i {
+  position: absolute;
+  left: 10px;
+}
+#toolbar #filter {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 515px) {
+  #toolbar #filter {
+    width: 50%;
+  }
+}
+@media (max-width: 515px) {
+  #toolbar {
+    flex-direction: column;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 1.2rem;
+  transition: all 0.4s;
+}
+.list .list-btn {
+  display: flex;
+  gap: 0.4rem;
+}
+.list h4 {
+  flex: 1;
+}
+.list.done {
+  background-color: #0e3e6e;
+}
+.list.done h4 {
+  color: #fff;
+  text-decoration: line-through;
+}
+.list.done .btn:hover {
+  background-color: #6b6363;
+}
+@media (max-width: 515px) {
+  .list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+#add-form, #edit-form {
+    padding: 1.2rem;
+    border-bottom: 1px solid $gray;
+
+    label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        display: flex;
+        gap: 0.4rem;
+    }
+
+    #add-input, #edit-input {
+        width: 100%;
+    }
+
+    #cancel-edit-btn {
+        margin-top: 0.8rem;
+    }
+}

@@ -1,0 +1,123 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #555454;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #383737, #302a2a);
+}
+
+.btn {
+    background-color: $bg-btn;
+    color: $color-btn;
+    border: 2px solid $color-btn;
+    outline: none;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .6s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        color: $color-btn;
+        font-weight: bold;
+        pointer-events: none;
+    }
+
+    &:hover {
+        background-color: $color-btn;
+        color: #fff;
+    }
+
+    &:hover > i {
+        color: #fff;
+    }
+}
+
+input, select {
+    padding: 0.4rem 0.6rem;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: 5rem auto;
+    background-color: $bg-container;
+    padding: 1.6rem;
+    border-radius: 12px;
+
+    @include mobile {
+        margin: 5rem 1rem;
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 0.95rem;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+.bg-green {
+    background-color: green;
+
+    i {
+        color: #fff;
+    }
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.list.important {
+    padding-left: 0;
+}
+
+.important {
+    background-color: #d6d628;
+    
+    h4 {
+        font-family: 'Caveat', cursive;
+        font-size: 1.5rem;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .star {
+        font-size: 1rem;
+        margin: 0 .4rem 0 .6rem;
+        color: rgb(133, 133, 48);
+    }
+
+    .important-btn {
+        background-color: #353333;
+        border-color: #353333;
+        
+        i {
+            color: #fff;
+        }
+    }
+}
+
+.opacity-half {
+    opacity: 0.5;
+}
